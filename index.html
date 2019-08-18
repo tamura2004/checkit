@@ -54,7 +54,7 @@
       },
       computed: {
         tasksOrderByIndex() {
-          return this.tasks.sort((a, b) => a.index - b.index);
+          return this.tasks.sort((a, b) => a.index - b.index).filter(t => t.index > 24);
         },
         usersOrderByIndex() {
           return this.users.sort((a, b) => a.index - b.index);
